@@ -1,0 +1,46 @@
+### crear
+POST http://localhost:4000/api/Productos/registro
+Content-Type: application/json
+
+{
+    "Fecha": "2024-03-15",
+    "Total": "99999",
+    "Estado": "Disponible",
+    "Productos": [
+        {
+            "Producto": "Producto 3",
+            "Cantidad": 04,
+            "Subtotal": 12000
+        }
+    ]
+}
+
+### leer 
+GET http://localhost:4000/api/Productos
+
+### buscar
+
+GET http://localhost:4000/api/Productos/
+
+### Actualizar
+
+PUT http://localhost:4000/api/Productos/modificar/65f2041a8590594b88618fec
+Content-Type: application/json
+
+{
+    "Fecha": "2024-03-14",
+    "Total": "2000",
+    "Estado": "No Disponible",
+    "Productos": [
+        {
+            "Producto": "Producto 2",
+            "Cantidad": 20,
+            "Subtotal": 200
+        }
+    ]
+}
+
+### Eliminar
+
+DELETE http://localhost:4000/api/Productos/eliminar/65f2041a8590594b88618fec
+
